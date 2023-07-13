@@ -496,7 +496,7 @@ var _ = Describe("Processor", func() {
 						cfg.Merge[0].With.Files = []string{"fake1", "fake2"}
 						cfg.ForEach.In = "integration/yamls/addons/"
 						cfg.ForEach.SubDirs = true
-						cfg.ForEach.Except = "fake2"
+						cfg.ForEach.Except = []string{"fake2.yaml"}
 						cfg.ForEach.ForAll = "integration/yamls/"
 
 						spruceConfig = []aviator.Spruce{cfg}
