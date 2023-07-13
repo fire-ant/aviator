@@ -29,7 +29,7 @@ builds:
       - -trimpath
     ldflags:
       - -s -w -X main.version={{.Version}} -X main.commit={{.Commit}} -X main.date={{ .CommitDate }} -X main.builtBy=goreleaser -X main.treeState={{ .IsGitDirty }}
-  - main: ./cmd/aviator/
+    main: ./cmd/aviator/
 
 universal_binaries:
   - replace: false
