@@ -7,7 +7,6 @@ before:
   hooks:
     - go mod tidy
     - ./scripts/build.sh
-    - ./scripts/manpages.sh
 
 builds:
   - env:
